@@ -3,16 +3,24 @@
 /* Set up basic typography and background for the entire page */
 /* Styling for the banner section */
 
+/* Universal Reset for HTML and Body */
+html, body {
+    /* Ensures no extra margin or padding interferes with the 100% height/width calculation */
+    padding: 0;
+    margin: 0;
+}
+
 .banner {
     display: flex; /* Arranges children (logos) in a row */
     justify-content: space-around; /* Spreads the logos out evenly */
     align-items: center; /* Vertically aligns them in the middle */
-    width: 90%;
+    width: 100%;
     max-width: 600px;
     margin-bottom: 25px; /* Adds space below the banner */
     background-color: #ffffff; /* White background for the banner */
     padding: 0 0;
     border-bottom: 1px solid #ddd;
+    margin: 25px auto;
 }
 
 /* Styling for the logos themselves */
@@ -29,7 +37,7 @@ body {
     justify-content: center; /* Center content horizontally */
     align-items: center; /* Center content vertically */
     min-height: 100vh;  /*Ensure the container takes up the full viewport height (vh) */
-    margin: 0;
+    margin: 20px auto;
 }
 
 /* Style the main container that holds the form elements */
@@ -38,9 +46,11 @@ body {
     padding: 30px;
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    width: 90%;
+    width: 100%;
     max-width: 400px; /* Limit the width of the form for readability */
     text-align: center;
+    margin: 20px auto;
+  
 }
 
 /* Style the main heading */
@@ -101,3 +111,50 @@ button:hover {
 
 }
 
+/* Media Query for Small Screens: Adjusting Proportions */
+/* MQ stands for Media Query - applying styles only when the screen width is 450px or less */
+@media (max-width: 450px) {
+
+    .body {
+        margin: auto;
+    }
+    
+    /* 1. Scale down the Logos (The largest items in the banner) */
+    .banner img {
+        /* Reduce max height from 130px to 80px */
+        max-height: 80px;
+     
+    }
+    
+    /* 2. Scale down the Main Container's Spacing */
+    .container {
+        /* Reduce padding inside the form box to save space */
+        padding: 20px; /* Reduced from 30px */
+        /* Ensure it takes up a bit more width on tiny screens */
+        width: 95%; 
+    }
+    
+    /* 3. Scale down the Main Heading */
+    h1 {
+        /* Reduce font size for the main title */
+        font-size: 1.3em; /* Reduced from 1.5em */
+        margin-bottom: 15px; /* Reduce vertical space */
+    }
+
+    /* 4. Scale down the Button/Input Text slightly (if desired) */
+    input[type="text"], 
+    select, 
+    button {
+        /* Reduce font size slightly, but keep it at 16px to prevent zoom */
+        font-size: 16px !important; 
+    }
+
+    /* 5. Center the Banner Text on mobile (if needed) */
+    .banner {
+        /* Ensure logo spacing is maintained */
+        padding: 5px 0;
+        margin-bottom: 15px;
+        width: 95%;
+        margin: 10px auto;
+    }
+}
