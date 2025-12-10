@@ -7,7 +7,7 @@
     display: flex; /* Arranges children (logos) in a row */
     justify-content: space-around; /* Spreads the logos out evenly */
     align-items: center; /* Vertically aligns them in the middle */
-    width: 100%;
+    width: 90%;
     max-width: 600px;
     margin-bottom: 25px; /* Adds space below the banner */
     background-color: #ffffff; /* White background for the banner */
@@ -28,7 +28,7 @@ body {
     background-color: #0f88789f; /* Light gray background */
     justify-content: center; /* Center content horizontally */
     align-items: center; /* Center content vertically */
-    /*min-height: 100vh;  Ensure the container takes up the full viewport height (vh) */
+    min-height: 100vh;  /*Ensure the container takes up the full viewport height (vh) */
     margin: 0;
 }
 
@@ -38,7 +38,7 @@ body {
     padding: 30px;
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    width: 100%;
+    width: 90%;
     max-width: 400px; /* Limit the width of the form for readability */
     text-align: center;
 }
@@ -100,3 +100,4 @@ button:hover {
     font-weight: bold;
 
 }
+
