@@ -1,0 +1,101 @@
+/* style.css */
+
+/* Set up basic typography and background for the entire page */
+/* Styling for the banner section */
+
+.banner {
+    display: flex; /* Arranges children (logos) in a row */
+    justify-content: space-around; /* Spreads the logos out evenly */
+    align-items: center; /* Vertically aligns them in the middle */
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 25px; /* Adds space below the banner */
+    background-color: #ffffff; /* White background for the banner */
+    padding: 0 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Styling for the logos themselves */
+.banner img {
+    max-height: 130px; /* Limits the height of the logos */
+    width: auto; /* Maintains the original image aspect ratio */
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    font-family: Arial, sans-serif; /* Use a common, readable font */
+    background-color: #0f88789f; /* Light gray background */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    min-height: 100vh; /* Ensure the container takes up the full viewport height (vh) */
+    margin: 0;
+}
+
+/* Style the main container that holds the form elements */
+.container {
+    background-color: #1047409a; /* White background for the form box */
+    padding: 30px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 100%;
+    max-width: 400px; /* Limit the width of the form for readability */
+    text-align: center;
+}
+
+/* Style the main heading */
+h1 {
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 1.5em;
+}
+
+/* Style the labels for input fields */
+label {
+    display: block; /* Makes the label take up the full width */
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #fffafa;
+}
+
+
+
+/* Style the input field (textbox) and the select dropdown menu */
+input[type="text"], 
+select {
+    width: 100%; /* Full width within the container */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    font-size: 1em;
+}
+
+/* Style the button */
+button {
+    background-color: #0e8157; /* Blue background (a standard web color) */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Changes the mouse icon to indicate it's clickable */
+    font-size: 1.1em;
+    width: 100%;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for the button */
+button:hover {
+    background-color: rgba(17, 184, 123, 0.705); /* Darker blue on hover */
+}
+
+/* Style the message area for errors or success feedback */
+#message {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Certificate Download Portal</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+
+    <div class="banner">
+        <img src="Mentasphere.jpeg" alt="Logo" class="logo"/>
+        <img src="Lavison_Training.png" alt="Logo" class="logo"/>
+        <img src="Arab_Board.jpeg" alt="Logo" class="logo"/>
+    </div>    
+
+    <div class="container">
+        <h1>Download Your Course Certificate</h1>
+        
+        <label for="traineeName">Select Trainee Name:</label>
+        <select id="traineeName">
+            <option value="">-- Choose Name --</option>
+            <option value="yussef Adel">Yussef Adel</option>
+            </select>
+
+        <!-- <label for="uniqueId">Enter Unique ID:</label> -->
+        <!-- <input type="text" id="uniqueId" placeholder="e.g., 12345"> -->
+
+        <button onclick="checkAndDownload()">Download Certificate</button>
+
+        <p id="message" style="color: red;"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
