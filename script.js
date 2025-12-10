@@ -40,7 +40,7 @@ function checkAndDownload() {
     // if (expectedId === enteredId) {
         // ID is correct! Construct the file path.
         // File path example: certificates/john_doe_certificate.pdf
-        const filePath = `certificates/${selectedTrainee}.jpeg`;
+        const filePath = `${selectedTrainee}.jpeg`;
 
         // 3. Redirect the user to download the PDF
         // window.location.href changes the browser's current page to the file path, 
@@ -53,4 +53,5 @@ function checkAndDownload() {
         // ID is incorrect
     //     messageElement.textContent = 'Error: Invalid Unique ID for the selected trainee.';
     // }
+
 }
