@@ -40,7 +40,7 @@ function checkAndDownload() {
     // if (expectedId === enteredId) {
         // ID is correct! Construct the file path.
         // File path example: certificates/john_doe_certificate.pdf
-        const filePath = `${selectedTrainee}.jpeg`;
+        const filePath = `certificates/${selectedTrainee}.jpeg`;
 
         // 3. Redirect the user to download the PDF
         // window.location.href changes the browser's current page to the file path, 
@@ -55,3 +55,4 @@ function checkAndDownload() {
     // }
 
 }
+
