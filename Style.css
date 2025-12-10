@@ -28,7 +28,7 @@ body {
     background-color: #0f88789f; /* Light gray background */
     justify-content: center; /* Center content horizontally */
     align-items: center; /* Center content vertically */
-    min-height: 100vh; /* Ensure the container takes up the full viewport height (vh) */
+    /*min-height: 100vh;  Ensure the container takes up the full viewport height (vh) */
     margin: 0;
 }
 
@@ -98,4 +98,5 @@ button:hover {
     padding: 10px;
     border-radius: 5px;
     font-weight: bold;
+
 }
