@@ -19,14 +19,22 @@ html, body {
     margin-bottom: 25px; /* Adds space below the banner */
     background-color: #ffffff; /* White background for the banner */
     padding: 0 0;
-    border-bottom: 1px solid #ddd;
+    /* border-bottom: 2px solid #000;
+    border-right: 2px solid #000;
+    border-left: 2px solid #000;
+    border-top: 2px solid #000; */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3), 
+                -4px -4px 10px rgba(255, 255, 255, 0.5);
+    
     margin: 25px auto;
+    /* border: 2px solid #0000; */
 }
 
 /* Styling for the logos themselves */
 .banner img {
     max-height: 130px; /* Limits the height of the logos */
     width: auto; /* Maintains the original image aspect ratio */
+    /* border: 1px solid #000; Optional: adds a light border around logos */
 }
 
 body {
@@ -37,7 +45,8 @@ body {
     justify-content: center; /* Center content horizontally */
     align-items: center; /* Center content vertically */
     min-height: 100vh;  /*Ensure the container takes up the full viewport height (vh) */
-    margin: 20px auto;
+    margin: 20px 0;
+    /* border: 1px solid #000; */
 }
 
 /* Style the main container that holds the form elements */
@@ -50,6 +59,7 @@ body {
     max-width: 400px; /* Limit the width of the form for readability */
     text-align: center;
     margin: 20px auto;
+    /* border: 1px solid #000  ; */
   
 }
 
@@ -115,8 +125,13 @@ button:hover {
 /* MQ stands for Media Query - applying styles only when the screen width is 450px or less */
 @media (max-width: 450px) {
 
-    .body {
-        margin: auto;
+    /* FIX 1: Removed the dot "." before body */
+     body { 
+       /* FIX 2: Reset margin to 0 so the body fills the whole phone screen */
+        margin: 0;  
+        padding: 10px; /*Optional: adds a tiny breathing room on edges */
+        width: 100%; /*Ensures body uses full width */
+        box-sizing: border-box; /*Includes padding in width calculation */
     }
     
     /* 1. Scale down the Logos (The largest items in the banner) */
@@ -127,12 +142,14 @@ button:hover {
     }
     
     /* 2. Scale down the Main Container's Spacing */
-    .container {
-        /* Reduce padding inside the form box to save space */
-        padding: 20px; /* Reduced from 30px */
+     .container {
+        /*Reduce padding inside the form box to save space */
+        padding: 10px; /* Reduced from 30px */
         /* Ensure it takes up a bit more width on tiny screens */
-        width: 95%; 
-    }
+        width: 95%;  
+        margin: 25px 0;
+        
+    } 
     
     /* 3. Scale down the Main Heading */
     h1 {
