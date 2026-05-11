@@ -1,3 +1,27 @@
+// --- PIN PROTECTION START ---
+(function() {
+    const REQUIRED_PIN = "2026"; // Set your desired PIN here
+    let authorized = false;
+    
+    // This will keep popping up until they get it right or close the tab
+    while (!authorized) {
+        const userEntry = prompt("Please enter the access PIN to view the certificates:");
+        
+        if (userEntry === REQUIRED_PIN) {
+            authorized = true;
+        } else if (userEntry === null) {
+            // If the user clicks 'Cancel', redirect them away
+            window.location.href = "https://www.google.com";
+            return;
+        } else {
+            alert("Incorrect PIN. Please try again.");
+        }
+    }
+})();
+// --- PIN PROTECTION END ---
+
+
+
 // A simple data structure to map the trainee ID (value) 
 // and the expected unique number (key) to the PDF filename.
 // The key is the unique ID, and the value is the filename prefix.
