@@ -41,7 +41,7 @@ body {
     display: flex;
     flex-direction: column; /* Stack children vertically */
     font-family: montserrat, Arial, sans-serif; /* Use a common, readable font */
-    background-color: #63D471; /* #0f88789f;  Light gray background */
+    background-color: #D7D9D7; /* #0f88789f;  Light gray background */
     justify-content: center; /* Center content horizontally */
     align-items: center; /* Center content vertically */
     min-height: 100vh;  /*Ensure the container takes up the full viewport height (vh) */
