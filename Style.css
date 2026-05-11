@@ -40,8 +40,8 @@ html, body {
 body {
     display: flex;
     flex-direction: column; /* Stack children vertically */
-    font-family: Arial, sans-serif; /* Use a common, readable font */
-    background-color: #ffffff  /* #0f88789f;  Light gray background */
+    font-family: montserrat, Arial, sans-serif; /* Use a common, readable font */
+    background-color: #ffffff /* #0f88789f;  Light gray background */
     justify-content: center; /* Center content horizontally */
     align-items: center; /* Center content vertically */
     min-height: 100vh;  /*Ensure the container takes up the full viewport height (vh) */
